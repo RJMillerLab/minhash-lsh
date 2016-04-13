@@ -1,0 +1,2 @@
+export GOPATH=$PWD
+export GOMAXPROCS=64
