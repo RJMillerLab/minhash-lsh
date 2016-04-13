@@ -38,3 +38,14 @@ DOMAIN
 MINHASH
 LIST
 LIST*
+
+# Latex
+*.aux
+*.bbl
+*.dvi
+*.blg
+*-converted-to.pdf
+paper.pdf
+*.log
+
+.DS_Store
