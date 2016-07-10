@@ -20,7 +20,7 @@ pdf = gamma.pdf(x, gamma_x[0], gamma_x[1], gamma_x[2])
 pdf = pdf / np.sum(pdf)
 axes[0].plot(x, pdf)
 axes[0].set_ylabel("Probability")
-axes[0].set_xlabel("Sqaured Jaccard Distance") 
+axes[0].set_xlabel("Squared Jaccard Distance") 
 
 # Plot kth nearest neighbour distance distribution
 for i, k in enumerate(ks):
@@ -29,7 +29,7 @@ for i, k in enumerate(ks):
     pdf = pdf / np.sum(pdf)
     axes[1].plot(x, pdf, label="%d-NN" % k)
 axes[1].legend(loc="lower right")
-axes[1].set_xlabel("Sqaured Jaccard Distance") 
+axes[1].set_xlabel("Squared Jaccard Distance") 
 
 plt.savefig("dist_dist.pdf", bbox_inches='tight')
 plt.close()
